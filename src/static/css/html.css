@@ -4,6 +4,10 @@ html {
   overflow-y: hidden;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   background-image: linear-gradient(#76b852, white);
 }

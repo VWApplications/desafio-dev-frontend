@@ -15,12 +15,6 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
     permissions.push(PERMISSIONS.ADMIN);
   }
 
-  if (!user && isAuthenticated()) {
-    errorAlert("Usuário não encontrado, por favor acesse novamente e não utilize a URL como navegação.");
-    localStorage.removeItem("cnab-token");
-    return <Redirect to={{ pathname: SCREENS.LOGIN }} />;
-  }
-
   if (!isAuthenticated()) {
     errorAlert("Você precisa tá logado para realizar essa ação.");
     return <Redirect to={SCREENS.LOGIN} />;
