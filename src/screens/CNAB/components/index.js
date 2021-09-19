@@ -1,0 +1,1 @@
+export { CNABUploadComponent } from "./CNABUpload";
