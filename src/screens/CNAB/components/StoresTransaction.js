@@ -26,7 +26,9 @@ export const StoreComponent = props => {
               <td>
                 <ul>
                   {store.cnabs.map((cnab, index) => (
-                    <li key={index}>{cnab.transaction_type} ({cnab.transaction_signal}) {formatMoney(cnab.value)} [{cnab.card}] {cnab.date} {cnab.time}</li>
+                    <li key={index}>
+                      {cnab.transaction_type} ({cnab.transaction_signal}) {formatMoney(cnab.value)} no cartão de número {cnab.card} ocorrido em {cnab.date} às {cnab.time}
+                    </li>
                   ))}
                 </ul>
               </td>
