@@ -5,6 +5,8 @@ Frontend do desafio dev da bycoders.
 OBS: Não foi utilizado nenhum framework de CSS, apenas uma biblioteca para encapsular CSS em componentes
 chamada styled-components.
 
+Link backend: https://github.com/VictorDeon/desafio-dev-api
+
 ## Setup
 
 Instale o nodejs para executar o projeto.
