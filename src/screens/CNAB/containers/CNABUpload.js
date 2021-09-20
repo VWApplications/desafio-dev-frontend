@@ -22,7 +22,7 @@ class CNABUploadContainer extends Component {
 
   __validateFileType = file => {
     if (file.type !== "text/plain") {
-      errorAlert(`Arquivo do tipo '${file.type}' inválido, o tipo correta é text/plain.`);
+      errorAlert(`Arquivo do tipo '${file.type}' inválido, o tipo correto é text/plain.`);
       return {
         code: "invalid-type",
         message: "Arquivo do tipo errado."

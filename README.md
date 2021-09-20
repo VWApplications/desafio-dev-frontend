@@ -1,6 +1,9 @@
 # Desafio Dev Frontend
 
-Frontend do desafio dev da bycoders
+Frontend do desafio dev da bycoders.
+
+OBS: Não foi utilizado nenhum framework de CSS, apenas uma biblioteca para encapsular CSS em componentes
+chamada styled-components.
 
 ## Setup
 
