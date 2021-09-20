@@ -7,6 +7,8 @@ chamada styled-components.
 
 ## Setup
 
+Instale o nodejs para executar o projeto.
+
 Para subir o projeto faça os seguinte comandos:
 
 ```sh
