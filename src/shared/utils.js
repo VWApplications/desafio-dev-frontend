@@ -34,3 +34,8 @@ export function hasPermission(requiredPermissions, userPermissions) {
   const allowedPermissions = new Set(requiredPermissions.filter(item => userPermissions.includes(item)));
   return allowedPermissions.size > 0;
 }
+
+export const formatMoney = amount => {
+  if (!amount) return amount;
+  return amount.toLocaleString("pt-br",{ style: "currency", currency: "BRL", minimumFractionDigits: 2 });
+};

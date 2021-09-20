@@ -16,7 +16,9 @@ export const CNABUploadComponent = props => {
 };
 
 const Button = styled.button`
-  float: right;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
   font-size: 1rem;
   margin: 1rem;
   background-color: transparent;

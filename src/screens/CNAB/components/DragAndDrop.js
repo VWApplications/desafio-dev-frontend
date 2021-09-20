@@ -1,6 +1,7 @@
 import React from "react";
 import { useDropzone } from "react-dropzone";
 import styled from "styled-components";
+import { StoreComponent } from "./StoresTransaction";
 
 export const DragAndDrop = props => {
   const { validator, submit } = props;
@@ -24,9 +25,12 @@ export const DragAndDrop = props => {
         <p>Arraste o arquivo CNAB aqui, ou clique e selecione o arquivo.</p>
       </DropInput>
       {files.length > 0 && (
-        <aside>
-          <p><b>Arquivo</b>: {files}</p>
-        </aside>
+        <>
+          <aside>
+            <p><b>Arquivo</b>: {files}</p>
+          </aside>
+          <StoreComponent {...props} />
+        </>
       )}
     </Container>
   );
@@ -43,4 +47,5 @@ const Container = styled.section`
 const DropInput = styled.div`
   border: 2px dashed gray;
   padding: 2rem;
+  margin-top: 1rem;
 `;
